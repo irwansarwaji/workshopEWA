@@ -1,17 +1,31 @@
 <html lang="en">
 <head>
-<!--viewport voor je browser responsiveness
-schaal is altijd 1 dus ga responsive aan de gang-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--viewport for browser responsiveness by default scaling at 1.0-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 	<!-- setup voor hosted material design lite -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" /> 
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" /> 
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 </head>
 <body>
+	<!--set the navigation header fixed-->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-</body>
-</html>
+		<!-- Start with the smallest sized screen -->
+		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="index.html">Challenge</a>
+				<a class="mdl-navigation__link" href="#">Highscore</a>
+				<a class="mdl-navigation__link" href="#">Login</a>
+			</nav>
+		</div>
+
+
+
+
+	</body>
+	</html>
