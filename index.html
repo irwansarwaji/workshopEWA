@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-<!--viewport for browser responsiveness by default scaling at 1.0-->
+	<!--viewport for browser responsiveness by default scaling at 1.0-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -15,7 +15,32 @@
 	<!--set the navigation header fixed-->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
+	
+
+<!-- START LARGE SCREEN MENU -->
+<header class="mdl-layout__header">
+	<div class="mdl-layout__header-row">
+		<nav class="mdl-navigation mdl-layout--large-screen-only">
+			<a class="mdl-navigation__link" href="index.html">Challenge</a>
+		</nav>
+		<div class="mdl-layout-spacer"></div>
+		<nav class="mdl-navigation mdl-layout--large-screen-only">
+			<a class="mdl-navigation__link" href="#">Highscore</a>
+				<a class="mdl-navigation__link" href="#">Login</a>
+		</nav>
+	</div>
+
+</header>
+<!-- END LARGE SCREEN MENU -->
+
+
+
+
+
+<!-- START SMALL SCREEN MENU-->
 		<!-- Start with the smallest sized screen -->
+		<!-- drawer is the 3 stripe menu for your mobile phone-->
+		<!-- show this on a small screen only-->
 		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
 			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link" href="index.html">Challenge</a>
@@ -23,9 +48,28 @@
 				<a class="mdl-navigation__link" href="#">Login</a>
 			</nav>
 		</div>
+		<!-- END OF SMALL SCREEN MENU-->
 
 
 
 
-	</body>
-	</html>
+
+
+		<!-- START OF TITLE-->
+		<!-- use spacer to center the title text-->
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<div class="mdl-layout-spacer"></div>
+				<h3 class="header_text">Challenge</h3>
+				<div class="mdl-layout-spacer"> </div>
+
+
+			</div>
+
+		</header>
+		<!--END OF TITLE-->
+
+
+	</div>
+</body>
+</html>
