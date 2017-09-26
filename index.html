@@ -6,70 +6,105 @@
 
 	<!-- setup voor hosted material design lite -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" /> 
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 </head>
 <body>
-	<!--set the navigation header fixed-->
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-	
+<!--Alles wat hier tussen staat is mdl en "js" is javascript-->
 
-<!-- START LARGE SCREEN MENU -->
-<header class="mdl-layout__header">
-	<div class="mdl-layout__header-row">
-		<nav class="mdl-navigation mdl-layout--large-screen-only">
-			<a class="mdl-navigation__link" href="index.html">Challenge</a>
-		</nav>
-		<div class="mdl-layout-spacer"></div>
-		<nav class="mdl-navigation mdl-layout--large-screen-only">
-			<a class="mdl-navigation__link" href="#">Highscore</a>
-				<a class="mdl-navigation__link" href="#">Login</a>
-		</nav>
-	</div>
+<!--set the navigation header fixed-->
 
-</header>
-<!-- END LARGE SCREEN MENU -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
 
 
+	<!-- Header! if you put large screen only here than the whole header will dissapear -->
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
 
 
-<!-- START SMALL SCREEN MENU-->
-		<!-- Start with the smallest sized screen -->
-		<!-- drawer is the 3 stripe menu for your mobile phone-->
-		<!-- show this on a small screen only-->
-		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
-			<nav class="mdl-navigation">
+			<!--This is voor largescreen only!-->
+			<nav class="mdl-navigation mdl-layout--large-screen-only">
 				<a class="mdl-navigation__link" href="index.html">Challenge</a>
+			</nav>
+			<div class="mdl-layout-spacer"></div>
+			<nav class="mdl-navigation mdl-layout--large-screen-only">
 				<a class="mdl-navigation__link" href="#">Highscore</a>
 				<a class="mdl-navigation__link" href="#">Login</a>
 			</nav>
 		</div>
-		<!-- END OF SMALL SCREEN MENU-->
+
+	</header>
+	<!-- END LARGE SCREEN MENU -->
 
 
 
 
+	<!-- START SMALL SCREEN MENU-->
+	<!-- Start with the smallest sized screen -->
+	<!-- drawer is the "HAMBURGER" menu for your mobile phone-->
+	<!-- show this on a small screen only-->
+	<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+		<nav class="mdl-navigation">
+			<a class="mdl-navigation__link" href="index.html">Challenge</a>
+			<a class="mdl-navigation__link" href="#">Highscore</a>
+			<a class="mdl-navigation__link" href="#">Login</a>
+		</nav>
+	</div>
+	<!-- END OF SMALL SCREEN MENU-->
 
 
-		<!-- START OF TITLE-->
-		<!-- use spacer to center the title text-->
-		<header class="mdl-layout__header">
-			<div class="mdl-layout__header-row">
-				<div class="mdl-layout-spacer"></div>
-				<h3 class="header_text">Challenge</h3>
-				<div class="mdl-layout-spacer"> </div>
+	<!-- START OF TITLE-->
+	<!-- use spacer to center the title text-->
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<div class="mdl-layout-spacer"></div>
+			<h3 class="header_text">Challenge</h3> <!--align center by using spacer-->
+			<div class="mdl-layout-spacer"> </div>
+		</div>
+	</header>
+	<!--END OF TITLE-->
 
 
+
+	<!--create content grid-->
+	<div class="content-grid mdl-grid">
+
+		<!--center the content by using spacer at the beginning and the end-->
+		<!--when using grid, it alwas have to end at 12 like "5,5,2" or "2,2,3,5" etc.-->
+		<div class="mdl-layout-spacer"></div>
+
+		<div class="mdl-cell mdl-cell--12-col">
+			<!--add content here-->
+			<!-- see cards from the getmdl.io website  -->
+
+			<!-- card1 "container" -->
+			<div class="demo-card-event mdl-card mdl-shadow--4dp">
+				<div class="mdl-card__title dutch"> <!--card title-->
+					<h2 class="mdl-card__title-text">Dutch Culture</h2>
+				</div>
+
+				<div class="mdl-card__supporting-text"> <!--card subtext-->
+					Learn the basics of dutch culture.
+				</div>
+
+
+				<div class="mdl-card__actions mdl-card--border">
+					<div class="mdl-layout-spacer"></div>
+
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="pagina2.html"> Let's go</a>
+				</div>
 			</div>
 
-		</header>
-		<!--END OF TITLE-->
+		</div>
 
+		<div class="mdl-layout-spacer"></div>
 
 	</div>
+
+</div>
 </body>
 </html>
