@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box; /*randen en de spaties om de element heen*/
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+mdl-grid{
+    margin: 0 auto;
+}
+
+/*Resizing Dutch democard for phones */
+
+/* standard withd of 290 --> overrule mdl */
+    .demo-card-event.mdl-card{
+    width: 290px;
+    min-height: 0;
+    }
+
+/* if its on a screen with min 480px width --> make the card 390 */
+    @media only screen and (min-width: 480px) {
+        .demo-card-event.mdl-card{
+            width: 390px;
+        }
+    }
+
+/* if its on a screen with min 1080px width --> make the card 490 */
+@media only screen and (min-width:1080px) {
+    .demo-card-event.mdl-card{
+        width: 490px;
+    }
+}
+
+/*Dutch democard */
+.demo-card-event>.dutch {
+    color: #fff;
+    background: url('../images/tulip50.png') center left 5% no-repeat #46B6AC;
+    text-align: center;
+
+}
+
+.demo-card-event>.music {
+    color: #fff;
+    background: url('../images/music.png') center left 5% no-repeat #46B6AC;
+    text-align: center;
+
+}
+
+.demo-card-event>.hamburger {
+    color: #fff;
+    background: url('../images/hamburger.png') center left 5% no-repeat #46B6AC;
+    text-align: center;
+
+}
+
+.mdl-card__title-text{
+  margin-left: 70px;
+}
+
+.mdl-card__actions{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.mdl-layout__header-row>.header_text{
+    font-weight: 200;
+    text-align: left;
+}
